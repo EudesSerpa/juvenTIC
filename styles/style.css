@@ -1,9 +1,59 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 * {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a { text-decoration: none; }
+
+/* Navbar Section */
+.nav-main--links a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+}
+
+.nav-main--form input {
+    min-width: 190px;
+}
+
+.nav-main--form button {
+    border-radius: 8px;
+}
+
+/* Slider Section */
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("https://i.postimg.cc/fW653gbn/foto1-2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-section--wrapper-logo {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.slider-section--title {
+    color: #fff;
 }
