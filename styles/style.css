@@ -57,9 +57,10 @@ a { text-decoration: none; }
 .nav-main--form button {
     border: none;
     border-radius: 8px;
+    background-color: var(--bg-button);
 }
 .nav-main--form button:hover {
-    background-color: var(--bg-button);
+    background-color: #E7360A;
 }
 
 
