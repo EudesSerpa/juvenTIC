@@ -270,7 +270,7 @@ a { text-decoration: none; }
     display: inline-block;
     width: 50px;
     height: 50px;
-    padding: 5px;
+    padding: 7px;
     font-size: 2.4rem;
     color: var(--main-color);
     opacity: .7;
@@ -333,7 +333,9 @@ a { text-decoration: none; }
 }
 
 
-/* Media Queries */
+
+
+/* --- Media Queries --- */
 @media (min-width: 410px) {
     .plate-details {
         top: 85%;
