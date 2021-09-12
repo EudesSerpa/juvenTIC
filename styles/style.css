@@ -52,6 +52,7 @@ a { text-decoration: none; }
 
 .nav-main--form input {
     min-width: 190px;
+    font-size: 1.4rem;
 }
 
 .nav-main--form button {
@@ -95,7 +96,7 @@ a { text-decoration: none; }
 
 .carousel-caption p {
     max-width: 95%;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     font-size: 2.4rem;
     font-weight: 700;
     color: #fff;
@@ -353,9 +354,6 @@ a { text-decoration: none; }
 @media (min-width: 510px) {
     .carousel-caption img {
         max-width: 320px;
-    }
-    .carousel-caption p {
-        margin-top: 40px;
     }
     .ourProposal-section--wrapper {
         max-width: 80%;
