@@ -1,9 +1,75 @@
 html {
     box-sizing: border-box;
+    height: 100%
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+body{
+    min-height: 100%;
+}
+
+.logo{
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+
+.separe{
+    margin-right: auto;
+}
+
+h3{
+   color: #E5992C
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    color: #481717;
+}
+
+.negrita{
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-container{
+    gap: 14px ;
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.grid-container .histori{
+    margin-top: 48px;
+}
+
+.grid-container-card{
+    color: white;
+    gap: 14px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    background-color: #B467A7;
+}
+
+.grid-container img{
+    margin: 54px 0px 0px 30px;
+}
+
+
+.header{
+    text-align: center;    
+}
+
+.header img{
+    margin-top: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    width:200px;
+    height:200px;
+    
 }
