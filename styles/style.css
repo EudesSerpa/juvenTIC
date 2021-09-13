@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
-    --main-color: #fff;
-    --bg-button: #f73600;
+    --white: #fff;
+    --orange: #f73600;
+    --orange-dark: #cc2b2b;
     --vinotinto: #310101;
 }
 
@@ -21,7 +22,7 @@ html {
 body {
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 1.6rem;
-    background-color: var(--main-color);
+    background-color: var(--white);
 }
 
 .wrapper {
@@ -59,10 +60,10 @@ a { text-decoration: none; }
 .nav-main--form button {
     border: none;
     border-radius: 8px;
-    background-color: var(--bg-button);
+    background-color: var(--orange);
 }
 .nav-main--form button:hover {
-    background-color: #E7360A;
+    background-color: var(--orange-dark);
 }
 
 
@@ -79,7 +80,7 @@ a { text-decoration: none; }
 }
 
 .carousel-indicators .active {
-    background-color: var(--bs-orange);
+    background-color: var(--orange-dark);
 }
 
 .carousel-caption {
@@ -100,7 +101,7 @@ a { text-decoration: none; }
     margin: 30px auto 0;
     font-size: 2.4rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
 }
 
 .slide-section--button__toggle {
@@ -117,7 +118,7 @@ a { text-decoration: none; }
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--main-color);
+    color: var(--white);
 }
 
 .ourProposal-section--title,
@@ -197,14 +198,14 @@ a { text-decoration: none; }
 
 .plate-name {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--white);
 }
 
 .plate-description {
     padding-top: 5px;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    color: #e3e3e3;
+    color: var(--white);
 }
 
 .menu-link img {
@@ -213,8 +214,12 @@ a { text-decoration: none; }
 .menu-link a {
     margin-top: 20px;
     font-size: 1.6rem;
-    background-color: var(--bg-button);
+    background-color: var(--orange);
     color: #fff;
+}
+.menu-link a:hover {
+    background-color: var(--orange-dark);
+    color: var(--white);
 }
 
 
@@ -224,7 +229,7 @@ a { text-decoration: none; }
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--main-color);
+    color: var(--white);
 }
 
 .wrapper-cards {
@@ -273,7 +278,7 @@ a { text-decoration: none; }
     height: 50px;
     padding: 7px;
     font-size: 2.4rem;
-    color: var(--main-color);
+    color: inherit;
     opacity: .7;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 50%;
@@ -281,7 +286,7 @@ a { text-decoration: none; }
 }
 .icon:hover {
     opacity: 1;
-    color: var(--bs-orange);
+    color: var(--orange-dark);
 }
 
 
@@ -341,7 +346,7 @@ a { text-decoration: none; }
 
 
 
-/* --- Aside --- */
+/* --- Floating --- */
 /* Float Button: Social Media */
 #btn-mas{
     display: none;
@@ -355,7 +360,7 @@ a { text-decoration: none; }
 .redes a, .btn-mas label{
     display: block;
     text-decoration: none;
-    background: #cc2b2b;
+    background: var(--orange-dark);
     color: #fff;
     width: 55px;
     height: 55px;
@@ -367,7 +372,7 @@ a { text-decoration: none; }
 }
 .redes a:hover{
     background: #fff;
-    color: #cc2b2b;
+    color: var(--orange-dark);
 }
 .redes a{
     margin-bottom: -15px;
@@ -381,7 +386,7 @@ a { text-decoration: none; }
 }
 .btn-mas label{
     cursor: pointer;
-    background: var(--bg-button);
+    background: var(--orange);
     font-size: 23px;
 }
 #btn-mas:checked ~ .btn-mas label{
@@ -537,4 +542,3 @@ a { text-decoration: none; }
         max-height: 500px;
     }
 }
-
