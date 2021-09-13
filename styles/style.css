@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
     --main-color: #fff;
     --bg-button: #f73600;
-    --bg-footer: #310101;
+    --vinotinto: #310101;
 }
 
 html {
@@ -96,7 +97,7 @@ a { text-decoration: none; }
 
 .carousel-caption p {
     max-width: 95%;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
     font-size: 2.4rem;
     font-weight: 700;
     color: #fff;
@@ -145,7 +146,7 @@ a { text-decoration: none; }
     margin: 20px auto 40px;
     font-size: 2.4rem;
     font-weight: 700;
-    color: #631104;
+    color: var(--vinotinto);
 }
 
 .trending-products {
@@ -284,6 +285,62 @@ a { text-decoration: none; }
 }
 
 
+/* Testimonials Section */
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.testimonial-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--vinotinto);
+}
+
+.testimonial-data img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5%;
+    border: 7px double rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.testimonial-data .detail {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.testimonial-data .client {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.icon-left,
+.icon-right {
+    position: absolute;
+    font-size: 3.3rem;
+    opacity: 0.1;
+}
+
+.icon-left {
+    margin-top: -20px;
+    left: 0;
+}
+
+.icon-right {
+    margin: 5px;
+}
+
+
+
 /* --- Aside --- */
 /* Float Button: Social Media */
 #btn-mas{
@@ -337,6 +394,7 @@ a { text-decoration: none; }
 
 /* --- Media Queries --- */
 @media (min-width: 410px) {
+    /* Recommendations Section */
     .plate-details {
         top: 85%;
         padding-top: 5px;
@@ -354,13 +412,20 @@ a { text-decoration: none; }
 }
 
 @media (min-width: 510px) {
+    /*Carousel Section */
     .carousel-caption img {
         max-width: 320px;
     }
+    .carousel-caption p {
+        margin-top: 10px;
+    }
+
+    /* OurProposal Section */
     .ourProposal-section--wrapper {
         max-width: 80%;
     }
 
+    /* Recommendations Section */
     .plate-details {
         top: 87%;
     }
@@ -373,6 +438,13 @@ a { text-decoration: none; }
 }
 
 @media (min-width: 653px) {
+    .carousel-caption p,
+    .ourProposal-section--title,
+    .events-section--title {
+        font-size: 3rem;
+    }
+
+    /* Recommendations Section */
     .plate-details {
         top: 85%;
     }
@@ -385,37 +457,48 @@ a { text-decoration: none; }
 }
 
 @media (min-width: 700px) {
-    .carousel-caption p {
-        margin: 20px auto 0;
-    }
     .ourProposal-section--title,
     .carousel-caption p,
     .events-section--title {
         font-size: 3.3rem;
     }
+
     .recommendations-section h2 {
         font-size: 2.8rem;
+    }
+
+    /* Testimonials Section */
+    .testimonial,
+    .testimonial-data img {
+        margin: 0 auto;
+    }
+    .testimonial-data img {
+        margin-right: 5%;
+    }
+    .testimonial-data {
+        flex-direction: row;
     }
 }
 
 @media (min-width: 1020px) {
-    .carousel-caption img {
-        max-width: 380px;
-    }
-
-    .ourProposal-section--title,
     .carousel-caption p,
+    .ourProposal-section--title,
     .events-section--title {
         font-size: 4.4rem;
     }
+
+    .carousel-caption img {
+        max-width: 380px;
+    }
     .carousel-caption p {
-        margin: 0;
+        margin-top: 30px;
     }
 
     .ourProposal-section--wrapper {
         max-width: 60%;
     }
 
+    /* Recommendations Section */
     .trending-products {
         flex-direction: row;
     }
@@ -445,6 +528,7 @@ a { text-decoration: none; }
         max-width: 80%;
     }
 
+    /* Recommendations Section */
     .trending-products {
         margin-left: 5%;
     }
