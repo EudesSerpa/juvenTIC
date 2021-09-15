@@ -102,6 +102,7 @@ a { text-decoration: none; }
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--white);
+    text-shadow: 1px 1px 10px var(--vinotinto), 0 0 1em var(--orange), 0 0 0.2em var(--orange-dark);
 }
 
 .slide-section--button__toggle {
@@ -476,7 +477,7 @@ a { text-decoration: none; }
 @media (min-width: 510px) {
     /*Carousel Section */
     .carousel-caption img {
-        max-width: 320px;
+        max-width: 300px;
     }
     .carousel-caption p {
         margin-top: 10px;
@@ -560,10 +561,10 @@ a { text-decoration: none; }
     }
 
     .carousel-caption img {
-        max-width: 380px;
+        max-width: 320px;
     }
     .carousel-caption p {
-        margin-top: 30px;
+        margin-top: 5vh;
     }
 
     .ourProposal-section--wrapper {
