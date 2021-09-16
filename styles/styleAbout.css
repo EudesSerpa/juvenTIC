@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+    height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    min-height: 100%;
+}
+
+.logo{
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+
+.separe{
+    margin-right: auto;
+}
+
+.color-sup{
+   color: #E5992C
+}
+
+.titulo{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 7rem;
+    color: #481717;
+}
+
+.negrita{
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-container{
+    gap: 14px ;
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.grid-container .histori{
+    margin-top: 48px;
+}
+
+.grid-container-card{
+    color: white;
+    gap: 14px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    background-color: #C6BA9E;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 #3337;
+}
+
+.grid-container img{
+    margin: 54px 0px 0px 30px;
+    box-shadow: 0 5px 10px #3337;
+    border-radius: 5px;
+}
+
+
+.header{
+    text-align: center;    
+}
+
+.header img{
+    margin-top: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    width:200px;
+    height:200px;  
+}
+
+.header h5{
+    font-family: 'Oswald', sans-serif;
+    color:#4A3F26;
+    font-weight: bold;
+}
+
+hr{
+    background-color: #4A3F26;
+    margin: 0 60px;
+}
+
+.header p{
+    font-family: 'Oswald', sans-serif;
+    color:#4A3F26;
+}
+
+.wrapper{
+    width: 100%;
+    margin-top: 100px;
+    background: #fff;
+    padding: 30px 0;
+}
+
+.slider-testimonial{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.testimonial-client{
+    margin-bottom: 15px;
+}
+
+.testimonial-client img{
+    width: 120px;
+    margin:auto;
+    border-radius: 50%;
+
+}
+
+.client-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonial-text{
+    padding: 10px 120px;
+}
+
+.testimonial-text p{
+    font-family: "Open sans";
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #454545;
+}
+
+footer{
+    background-color: #481717;
+}
+
+.cole{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.miniNav ul a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+.miniNav p{
+    color: white;
+    margin-left: 32px;
+}
+
+
