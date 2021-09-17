@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+.contenedor-general {
+	box-sizing: border-box;
+    border: solid rgb(49, 23, 23) 1px;
+    
+    max-width: 1800px;
+	width: 80%;
+    height: 980px;
+	margin: 0 auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,auto);
+
+}
+
+.header{
+    grid-column: 1/7;
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(0, 0, 0);
+    
+    text-align: left;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+.main{
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(179, 25, 25, 0.281);
+    grid-column: 1/7;
+    height: auto;
+    min-height: auto;
+    display: flex;
+    align-content: stretch;
+    padding-left: 250px;
+}
+
+.main2{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+  
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(14, 100, 44, 0.445);
+    grid-column: 1/7;
+    height: 400px;
+    padding-top: 100px;
+}   
+
+#mar{
+    color: aliceblue;
+}
+
+.contenedor-general .main2 .item1 p{
+    
+    padding: 10px;
+    
+}
+
+.footer{
+    display: flex;
+    border: solid 1px rgb(52, 214, 37);
+    background-color: rgb(0, 0, 0);
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+    height: 270px;
+    justify-content: space-around;
+    align-content: stretch;
+    font-size: 20px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width:auto ;
+    align-content: stretch;
+
+}
+  
+
+
+.contenedor-general .main .contactanos{
+    
+    background-color: rgba(14, 31, 7, 0.25);
+    width: 50%;
+    padding: 15px;
+    padding-top:20px ;
+}
+
+
+.contenedor-general .main .contactanos .conta{
+    padding-top: 10%;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 70px
+    
+}
+
+h2{
+    font-size: 27px;
+    color: azure;
+    margin-bottom: 20px;
+}
+
+.maps{
+    margin-left: 200px;
+}
+
+.direcciones{
+    margin-left: 200px;
+}
