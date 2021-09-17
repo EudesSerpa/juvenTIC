@@ -7,6 +7,12 @@
 body{
     background-color: rgb(0, 0, 0);
 }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .contenedor-general {
 	box-sizing: border-box;
     border: solid rgb(49, 23, 23) 1px;
