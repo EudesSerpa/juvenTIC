@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(46, 27, 15);
+}
+.contenedor {
+	box-sizing: border-box;
+    border: solid rgb(0, 0, 0) 1px;
+    
+    max-width: 1800px;
+	width: 80%;
+    height: 980px;
+	margin: 0 auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "header header header"
+                          "main  main main"
+                          "footer footer footer";
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(1, 1, 2);
+    grid-area:header;
+    text-align: left;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 100px;
+}
+
+.main{
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(28, 100, 76, 0.25);
+    grid-area:main ;
+    height: 600px;
+    min-height: 428px;
+    display: flex;
+    align-content: stretch;
+}
+
+
+.footer{
+    border: solid 1px rgb(0, 0, 0);
+    grid-area:footer ;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width:auto ;
+   
+
+}
+.contenedor .footer .maps{
+    align-self: flex-end;
+}
+
+.contenedor .main .contactanos{
+    
+    background-color: rgba(14, 31, 7, 0.25);
+    width: 50%;
+    padding: 15px;
+    padding-top:20px ;
+}
+
+
+.contenedor .main .contactanos .conta{
+    padding-top: 10%;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 50px
+    
+}
+
+h2{
+    font-size: 27px;
+    color: azure;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 100px;
+    border: 1px solid black;
+    box-shadow: 3px 30px 20px  rgb(13, 14, 13);
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.controls{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(8, 5, 5, 0.25);
+    color: aliceblue;
+    border: 1px solid rgb(227, 243, 203);
+    margin-bottom: 13PX;
+    border-radius: 4px;
+}
+
+.submit{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(5, 54, 48);
+    color: azure;
+    font-size: 20px;
+    margin-left: 200px;
+
+}
+
+.maps{
+    margin-left: 200px;
+}
+
+.direcciones{
+    margin-left: 200px;
+}
