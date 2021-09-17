@@ -7,7 +7,7 @@
 body{
     background-color: rgb(0, 0, 0);
 }
-.contenedor {
+.contenedor-general {
 	box-sizing: border-box;
     border: solid rgb(49, 23, 23) 1px;
     
@@ -62,7 +62,7 @@ body{
     color: aliceblue;
 }
 
-.contenedor .main2 .item1 p{
+.contenedor-general .main2 .item1 p{
     
     padding: 10px;
     
@@ -89,7 +89,7 @@ body{
   
 
 
-.contenedor .main .contactanos{
+.contenedor-general .main .contactanos{
     
     background-color: rgba(14, 31, 7, 0.25);
     width: 50%;
@@ -98,7 +98,7 @@ body{
 }
 
 
-.contenedor .main .contactanos .conta{
+.contenedor-general .main .contactanos .conta{
     padding-top: 10%;
     font-size: 55px;
     color: rgb(255, 255, 255);
