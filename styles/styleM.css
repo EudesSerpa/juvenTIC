@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+:root {
+    --white: #fff;
+    --orange: #f73600;
+    --orange-dark: #cc2b2b;
+    --vinotinto: #310101;
+}
 
 *{
     margin: 0;
@@ -11,7 +15,6 @@
 }
 
 body{
-    min-height: 1000px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -111,7 +114,7 @@ nav ul li a:hover{
 
 section{
     margin-top: 40vh;
-    padding: 100px;
+    /*padding: 100px;*/
 }
 
 section h2{
@@ -133,6 +136,7 @@ section .container{
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
+    padding: 0;
 }
 
 section .container .card{
@@ -320,46 +324,33 @@ section .container .card .content .sci li a{
     padding: 2px;
 }
 
-/* Generals Styles */
-:root {
-    --white: #fff;
-    --orange: #f73600;
-    --orange-dark: #cc2b2b;
-    --vinotinto: #310101;
-}
 
-footer {
-    width: 100%;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 16px;
-    background-color: var(--white);
-}
-
-footer .wrapper {
+/* --- Footer --- */
+.wrapper {
     max-width: 95%;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-footer img {
+.footer-section {
+    width: 100%;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--vinotinto);
+}
+
+.footer-section img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-footer a { 
-    text-decoration: none; 
-}
-
-/* --- Footer --- */
-.footer-section {
-    background-color: var(--vinotinto);
-    color: var(--white);
+.footer-section a {
+    text-decoration: none;
 }
 
 .footer-section .wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -370,8 +361,8 @@ footer a {
     list-style: none;
 }
 
-footer .footer-section--logo,
-footer .footer-section--map {
+.wrapper .footer-section--logo,
+.wrapper .footer-section--map {
     display: none;
     max-width: 180px;
 }
@@ -408,7 +399,7 @@ footer .footer-section--map {
 /* --- Media Queries --- */
 @media (min-width: 410px) {
     /* Footer Section */
-    footer .footer-section--logo {
+    .wrapper .footer-section--logo {
         display: block;
         width: 50%;
         margin-right: 3%;
@@ -417,11 +408,11 @@ footer .footer-section--map {
 
 @media (min-width: 700px) {
     /* Footer Section */
-    footer .footer-section--logo,
-    footer .footer-section--map {
+    .wrapper .footer-section--logo,
+    .wrapper .footer-section--map {
         width: 100%;
     }
-    .footer-section--map {
+    .wrapper .footer-section--map {
         display: block;
         margin-left: 3%;
     }
@@ -435,10 +426,10 @@ footer .footer-section--map {
 
 /* Responsive */
 @media (max-width: 991px){
-    section, 
+    /*section, 
     header{
         padding: 40px;
-    }
+    }*/
 
     section h2{
         font-size: 4em;
@@ -500,14 +491,6 @@ footer .footer-section--map {
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
-    }
-    footer {
-        padding: 40px;
-        font-size: 1em;
-    }
-
-    footer .wrapper{
-        flex-direction: column;
     }
 }
 

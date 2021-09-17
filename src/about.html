@@ -7,54 +7,49 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- WebFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styleAbout.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="sss/sss.css">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="sss/sss.js"></script>
-  <script>
-      jQuery(function($){
-          $('.slider-testimonial').sss({
-            slideShow : true,
-            speed : 3500
-          });
-      });
-  </script>
 </head>
 <body>
     <!-- App -->
     <!---------------------------Nav------------------------>
     <!--------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand logo mx-5" href="#">sal&salsa</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div>
-            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">EL MENÚ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACTANOS</a>
-                </li>
-              </ul>
+    <header>
+      <nav class="nav-main navbar navbar-expand-md navbar-light bg-black shadow-sm">
+        <div class="container-xxl wrapper">
+          <a class="nav-main--logo navbar-brand ms-3 ms-lg-5" href="./index.html">
+            <img src="https://i.postimg.cc/5y3c0dMJ/logo-2x.png" alt="Restaurant Logo" width="70" height="50">
+          </a>
+
+          <button class="nav-main--button-collapse navbar-toggler p-2 me-3 bg-white bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#dataNavbarCollapsed" aria-controls="dataNavbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="dataNavbarCollapsed" class="collapse navbar-collapse justify-content-end">
+            <div class="nav-main--links navbar-nav">
+              <a href="./menu.html" class="nav-link px-3 text-white">Menu</a>
+              <a href="#" class="nav-link px-3 text-white">Map Site</a>
+              <a href="./contact.html" class="nav-link px-3 text-white">Contact</a>
+              <a href="./about.html" class="nav-link px-3 text-white">About</a>
+
+              <form action="#" class="nav-main--form d-flex pe-3 my-3 me-lg-5 my-md-0">
+                <input class="form-control form-control-lg mx-2 rounded-pill" type="search" placeholder="Search your favorite plate" aria-label="Search your favorite plate">
+                <button class="btn btn-secondary me-2 fs-5" type="submit">Search</button>
+              </form>
             </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!---------------------------END OF Nav------------------------>
     <!------------------------------------------------------------->
 
@@ -64,7 +59,7 @@
         <div class="grid-container">
           <img src="https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1631316668/restaurant-691397_640_mdcyzz.jpg" width="500px" height="400px" alt="" class="image">
           
-          <div>
+          <div class="our">
             <h3 class="color-sup">NUESTRA</h3>
             <h1 class="titulo">Historia</h1>
             <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -73,9 +68,6 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -155,7 +147,7 @@
 
         <!-----------------------Comentarios------------------------>
         <!--------------------------------------------------------->
-          <div class="wrapper">
+          <div class="wrapper-testimonials">
             <div class="slider-testimonial">
               <div class="testimonial-item">
                 <div class="testimonial-client">
@@ -189,32 +181,48 @@
         <!-----------------------end of Comentarios------------------------>
         <!--------------------------------------------------------->
     </main>
-    <footer>
-      <div class="container">
-        <div class="cole">
-          <div class="my-4">
-            <img src="https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1631726989/logo_2x_t0bph6.png" width="220px" height="200px" alt="">
-          </div>
-          
-          <div class="miniNav my-4">
+
+    <footer class="footer-section">
+      <div class="container-xxl wrapper">
+        <a href="./index.html" class="footer-section--logo">
+          <img src="https://i.postimg.cc/5y3c0dMJ/logo-2x.png" alt="Restaurant logo">
+        </a>
+        <div class="footer-credentials">
+          <div class="footer-credentials--nav">
             <ul>
-              <a href="#" class="">MAPA DEL SITIO</a>
-              <a href="#" class="">CONTACTANOS</a>
-              <a href="#" class="">RESERVAS</a>
+              <li><a href="#">MapSite</a></li>
+              <li><a href="./contact.html">Contact us</a></li>
+              <li><a href="#">Reservations</a></li>
             </ul>
-            <p>Restaurante Sal y Salsa Ltda.<br>
-              Calle 19No.7-30. Bogotá <br>
-              reservas@salysalsa.com <br>
-              31232525321
-            </p>
-            <p>&copy Copyright 2020.</p>
+          </div>
+          <div class="footer-credentials--data">
+            <ul>
+              <li>Restaurant Sal y Salsa Ltda.</li>
+              <li>Calle 33 No. 5 - 15, JuvenTIC</li>
+              <li>reserveTIC@juventic.com</li>
+              <li>333 333 3333</li>
+            </ul>
+            <p class="copyright">juvenTIC © Copyright 2021.</p>
           </div>
         </div>
-        
+        <a href="#" class="footer-section--map">
+          <img src="https://i.postimg.cc/BZ1VhPkM/map.jpg" alt="Direction on Google Maps">
+        </a>
       </div>
-      
     </footer>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="sss/sss.js"></script>
+    <script>
+        jQuery(function($){
+            $('.slider-testimonial').sss({
+              slideShow : true,
+              speed : 3500
+            });
+        });
+    </script>
 </body>
 </html>
