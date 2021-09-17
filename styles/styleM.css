@@ -328,14 +328,10 @@ section .container .card .content .sci li a{
     --vinotinto: #310101;
 }
 
-
 footer {
     width: 100%;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    box-sizing: inherit;
     font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1.6rem;
+    font-size: 16px;
     background-color: var(--white);
 }
 
@@ -363,6 +359,7 @@ footer a {
 
 .footer-section .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -373,8 +370,8 @@ footer a {
     list-style: none;
 }
 
-.footer-section--logo,
- .footer-section--map {
+footer .footer-section--logo,
+footer .footer-section--map {
     display: none;
     max-width: 180px;
 }
@@ -400,7 +397,7 @@ footer a {
 }
 
 .footer-credentials--data {
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 
 .footer-credentials--data .copyright {
@@ -411,7 +408,7 @@ footer a {
 /* --- Media Queries --- */
 @media (min-width: 410px) {
     /* Footer Section */
-    .footer-section--logo {
+    footer .footer-section--logo {
         display: block;
         width: 50%;
         margin-right: 3%;
@@ -420,8 +417,8 @@ footer a {
 
 @media (min-width: 700px) {
     /* Footer Section */
-    .footer-section--logo,
-    .footer-section--map {
+    footer .footer-section--logo,
+    footer .footer-section--map {
         width: 100%;
     }
     .footer-section--map {
