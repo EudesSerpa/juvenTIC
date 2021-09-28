@@ -219,11 +219,14 @@ section .container .card .content .sci{
     position: relative;
     bottom: 10px;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
 }
 
 section .container .card .content .sci li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     transform: translateY(40px);
     transition: 0.5s;
     opacity: 0;
@@ -305,8 +308,7 @@ section .container .card .content .sci li a{
 }
 
 .textModal .titulo{
-    font-size: 15px;
-    width: 30%;
+    font-size: 22px;
 }
 
 .textModal .textP{
