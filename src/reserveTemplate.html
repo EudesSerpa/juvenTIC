@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuvenTIC Restaurant</title>
+
+    <meta name="description" content="Restaurante JuvenTIC la mejor comida gourmet preparada por los mejores con mucho amor para ti y toda tu familia!">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/reserveStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main navbar navbar-expand-md navbar-light bg-black bg-opacity-50 shadow-sm">
+            <div class="container-xxl wrapper">
+                <a class="nav-main--logo navbar-brand ms-3 ms-lg-5" href="./index.html">
+                    <img src="https://i.postimg.cc/5y3c0dMJ/logo-2x.png" alt="Restaurant Logo" width="70" height="50">
+                </a>
+
+                <button class="nav-main--button-collapse navbar-toggler p-2 me-3 bg-white bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#dataNavbarCollapsed" aria-controls="dataNavbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="dataNavbarCollapsed" class="collapse navbar-collapse justify-content-end">
+                    <div class="nav-main--links navbar-nav">
+                        <a href="#" class="nav-link px-3 text-white">Menu</a>
+                        <a href="#" class="nav-link px-3 text-white">Map Site</a>
+                        <a href="#" class="nav-link px-3 text-white">Contact</a>
+                        <a href="#" class="nav-link px-3 text-white">About</a>
+
+                        <form action="#" class="nav-main--form d-flex pe-3 my-3 me-lg-5 my-md-0">
+                            <input class="form-control form-control-lg mx-2 rounded-pill" type="search" placeholder="Search your favorite plate" aria-label="Search your favorite plate">
+                            <button class="btn btn-secondary me-2 fs-5" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="reservations-section container-xxl wrapper d-lg-flex">
+            <div class="container--details me-lg-5">
+                <h1 class="reservations-section--title">Reservaciones</h1>
+                <article class="reservations-section--description">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magni velit sint tempora alias modi odio facere deserunt doloremque. Laborum autem et necessitatibus, magni sit inventore optio, laboriosam saepe exercitationem obcaecati illo, cum sapiente magnam porro reiciendis eius placeat dolorum?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nemo rem voluptas tenetur repudiandae consequatur omnis mollitia perferendis quia quod.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Formulario de reserva -->
+            <form action="" class="main--form mt-lg-5">
+                <div class="container-input mb-4">
+                    <input type="text" id="name" required>
+                    <label for="name"><span>Nombre</span></label>
+                </div>
+
+                <div class="container-input mb-4">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email"><span>Correo electrónico</span></label>
+                </div>
+
+                <div class="container-input mb-4">
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="phone"><span>Teléfono</span></label>
+                </div>
+
+                <select name="servicio" id="servicio" class="my-5" aria-label="Selecciona un servicio" required>
+                    <option value="" hidden>Selecciona un servicio</option>
+                    <option value="cumples">Celebración de cumpleaños</option>
+                    <option value="aniversarios">Aniversarios</option>
+                    <option value="infantiles">Fiestas infantiles</option>
+                    <option value="declaraciones">Declaraciones o Propuestas</option>
+                    <option value="despedidas">Despedidas</option>
+                    <option value="cenas">Cena con amigos</option>
+                </select>
+
+                <label for="persons">Número de personas</label>
+                <input type="number" class="mb-4" name="persons" id="persons" min="1" value="1">
+
+                <!-- <label for="persons">Número de personas</label>
+                <input type="number" class="mb-4" name="persons" id="persons" min="1" value="1"> -->
+
+                <label for="dateOfReserve" class="mt-4">Fecha y hora para tu reserva <span>*</span></label>
+                <input type="datetime-local" class="mb-4" name="dateOfReserve" id="dateOfReserve" min="2021-09-29T08:00" value="2021-09-28T08:00">
+
+                <textarea name="indications" class="my-5" id="indications" cols="30" rows="5" placeholder="Deja aquí tus indicaciones especiales." aria-label="Indicaciones especiales"></textarea>
+
+                <input type="submit" value="Reservar" class="mb-4">
+            </form>
+        </section>
+    </main>
+
+
+    <article class="social-media--float-button">
+        <div id="container">
+            <input type="checkbox" id="btn-mas">
+            <div class="redes">
+                <a href="#" class="fa fa-facebook" aria-label="Facebook Page"></a>
+                <a href="#" class="fa fa-youtube" aria-label="Youtube Canal"></a>
+                <a href="#" class="fa fa-twitter" aria-label="Twitter Page"></a>
+            </div>
+            <div class="btn-mas">
+                <label for="btn-mas" class="fa fa-plus"></label>
+            </div>
+        </div>
+    </article>
+
+
+    <footer class="footer-section">
+        <div class="container-xxl wrapper">
+            <a href="./index.html" class="footer-section--logo">
+                <img src="https://i.postimg.cc/5y3c0dMJ/logo-2x.png" alt="Restaurant logo">
+            </a>
+            <div class="footer-credentials">
+                <div class="footer-credentials--nav">
+                    <ul>
+                        <li><a href="#">MapSite</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-credentials--data">
+                    <ul>
+                        <li>Restaurant Sal y Salsa Ltda.</li>
+                        <li>Calle 33 No. 5 - 15, JuvenTIC</li>
+                        <li>reserveTIC@juventic.com</li>
+                        <li>333 333 3333</li>
+                    </ul>
+                    <p class="copyright">juvenTIC © Copyright 2021.</p>
+                </div>
+            </div>
+            <a href="#" class="footer-section--map">
+                <img src="https://i.postimg.cc/BZ1VhPkM/map.jpg" alt="Direction on Google Maps">
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="../assets/services.js"></script>
+</body>
+</html>
