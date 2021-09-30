@@ -208,6 +208,37 @@ a { text-decoration: none; }
 }
 
 
+    /* Modal */
+.modal-dialog {
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: .8rem 1.5rem;
+}
+
+.modal-header {
+    font-size: 1.8rem;
+}
+.modal-body p:last-of-type {
+    font-size: 1.4rem;
+}
+.modal-footer button{
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: var(--orange);
+    letter-spacing: 0.02em;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.modal-footer button:hover {
+    color: var(--white);
+    background-color: var(--orange-dark);
+}
 
 /* --- Footer --- */
 .footer-section {
