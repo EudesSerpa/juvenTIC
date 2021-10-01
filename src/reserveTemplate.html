@@ -60,22 +60,22 @@
             <!-- Formulario de reserva -->
             <!-- action="https://formspree.io/f/xpzknqzj" method="POST" -->
             <form id="form" class="main--form mt-lg-5">
-                <div class="container-input mb-4">
-                    <input type="text" id="name" required>
-                    <label for="name"><span>Nombre</span></label>
+                <div id="container--input-name" class="container-input mb-4">
+                    <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
+                    <label class="label" for="name"><span>Nombre</span></label>
                 </div>
 
                 <div class="container-input mb-4">
-                    <input type="email" name="email" id="email" required>
-                    <label for="email"><span>Correo electrónico</span></label>
+                    <input type="email" name="email" id="email" class="input--email form-inputToValidate" required>
+                    <label class="label" for="email"><span>Correo electrónico</span></label>
                 </div>
 
                 <div class="container-input mb-4">
-                    <input type="tel" name="phone" id="phone" required>
-                    <label for="phone"><span>Teléfono</span></label>
+                    <input type="tel" name="phone" id="phone" class="input--phone form-inputToValidate" required>
+                    <label class="label" for="phone"><span>Teléfono</span></label>
                 </div>
 
-                <select name="servicio" id="servicio" class="my-5" aria-label="Selecciona un servicio" required>
+                <select name="service" id="service" class="my-5 form-inputToValidate" aria-label="Selecciona un servicio" required>
                     <option value="" hidden>Selecciona un servicio</option>
                     <option value="cumples">Celebración de cumpleaños</option>
                     <option value="aniversarios">Aniversarios</option>
@@ -85,11 +85,11 @@
                     <option value="cenas">Cena con amigos</option>
                 </select>
 
-                <label for="amountPeople">Número de personas</label>
-                <input type="number" class="mb-4" name="amountPeople" id="amountPeople" min="1" value="1">
+                <label class="label" for="amountPeople">Número de personas</label>
+                <input type="number" class="mb-4 input--amountPeople form-inputToValidate" name="amountPeople" id="amountPeople" min="1" value="1">
 
-                <label for="dateOfReserve" class="mt-4">Fecha y hora para tu reserva</label>
-                <input type="datetime-local" class="mb-4" name="dateOfReserve" id="dateOfReserve" min="2021-09-29T08:00" value="2021-09-28T08:00">
+                <label class="label" for="dateOfReserve" class="mt-4">Fecha y hora para tu reserva</label>
+                <input type="datetime-local" class="mb-4 input--dateOfReserve form-inputToValidate" name="dateOfReserve" id="dateOfReserve" min="2021-09-29T08:00" value="2021-09-28T08:00">
 
                 <textarea name="indications" class="my-5" id="indications" cols="30" rows="5" placeholder="Deja aquí tus indicaciones especiales." aria-label="Indicaciones especiales"></textarea>
 
@@ -152,6 +152,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <script src="../assets/reserves.js"></script>
+    <script src="../assets/validations.js"></script>
+    <!-- <script src="../assets/reserves.js"></script> -->
 </body>
 </html>

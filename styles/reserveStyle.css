@@ -150,12 +150,26 @@ a { text-decoration: none; }
     border-radius: 5px;
     background-color: var(--orange);
     outline: none;
-    transition: all 0.3s linear 0.2s;
+    transition: all 0.3s linear 0.1s;
 }
 .main--form input[type="submit"]:hover {
     font-weight: bold;
     color: var(--vinotinto);
     background-color: var(--white);
+}
+
+    /* estilos para las validaciones */
+.container-input input + .label.valid span {
+    color: #00C853;
+}
+.container-input input + .label.valid::after {
+    border-bottom: 3px solid #00C853;
+}
+.container-input input + .label.invalid span {
+    color: var(--orange-dark);
+}
+.container-input input + .label.invalid::after {
+    border-bottom: 3px solid var(--orange-dark);
 }
 
 
