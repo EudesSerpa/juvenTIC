@@ -147,7 +147,7 @@ section .container .card{
     justify-content: center;
     align-items: center;
 }
-
+/*
 section .container .card .contentTem{
     position: absolute;
     width: 300px;
@@ -205,7 +205,7 @@ section .container .card:hover .content .contentBx h3{
     transform: translateY(0px);
 }
 
-section .container .card .content .contentBx h3 span{
+section .container .card .content .contentBx h3 p{
     font-size: 12px;
     font-weight: 300;
     text-transform: initial;
@@ -234,7 +234,7 @@ section .container .card:hover .content .sci li{
 section .container .card .content .sci li a{
     color: #fff;
     font-size: 24px;
-}
+}*/
 
 #btn-mas{
     display: none;
