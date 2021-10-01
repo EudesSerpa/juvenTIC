@@ -173,6 +173,36 @@ a { text-decoration: none; }
 }
 
 
+.text-error.show,
+.form-invalid--text.show {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.text-error.no-show,
+.form-invalid--text.no-show {
+    display: none;
+}
+
+.text-error, .form-invalid--text {
+    color: var(--orange-dark);
+}
+
+.form-invalid--text {
+    padding: 5px;
+    margin-top: 40px;
+    color: var(--white);
+    background-color: var(--orange-dark);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form-invalid--text p {
+    max-width: 90%;
+    margin: auto;
+}
+
+
     /* Efecto Label Floating (Inputs: text - email - tel)*/
 .container-input {
     position: relative;
@@ -209,6 +239,10 @@ a { text-decoration: none; }
     transition: all 0.5s ease;
 }
 
+.container-input input:focus + label,
+.container-input input:valid + label {
+    pointer-events: none;
+}
 .container-input input:focus + label span,
 .container-input input:valid + label span {
     transform: translateY(-140%);

@@ -60,22 +60,35 @@
             <!-- Formulario de reserva -->
             <!-- action="https://formspree.io/f/xpzknqzj" method="POST" -->
             <form id="form" class="main--form mt-lg-5">
-                <div id="container--input-name" class="container-input mb-4">
+                <div class="mb-4 ">
+                    <div id="container--input-name" class="container-input">
+                        <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
+                        <label class="label" for="name"><span>Nombre</span></label>
+                    </div>
+                    <span class="text-error text-error--name no-show">Nombre invalido ⚠. Por favor, ingrese nombre y apellido.</span>
+                </div>
+                <!-- <div id="container--input-name" class="container-input mb-4">
                     <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
                     <label class="label" for="name"><span>Nombre</span></label>
+                </div> -->
+
+                <div class="mb-4">
+                    <div class="container-input">
+                        <input type="email" name="email" id="email" class="input--email form-inputToValidate" required>
+                        <label class="label" for="email"><span>Correo electrónico</span></label>
+                    </div>
+                    <span class="text-error text-error--email no-show">Correo no valido ⚠. Por favo ingrese un formato de correo valido.</span>
                 </div>
 
-                <div class="container-input mb-4">
-                    <input type="email" name="email" id="email" class="input--email form-inputToValidate" required>
-                    <label class="label" for="email"><span>Correo electrónico</span></label>
+                <div class="mb-4 ">
+                    <div class="container-input">
+                        <input type="tel" name="phone" id="phone" class="input--phone form-inputToValidate" required>
+                        <label class="label" for="phone"><span>Teléfono</span></label>
+                    </div>
+                    <span class="text-error text-error--phone no-show">Número invalido ⚠. Por favor, ingrese un número de celular valido.</span>
                 </div>
 
-                <div class="container-input mb-4">
-                    <input type="tel" name="phone" id="phone" class="input--phone form-inputToValidate" required>
-                    <label class="label" for="phone"><span>Teléfono</span></label>
-                </div>
-
-                <select name="service" id="service" class="my-5 form-inputToValidate" aria-label="Selecciona un servicio" required>
+                <select name="service" id="service" class="my-5" aria-label="Selecciona un servicio" required>
                     <option value="" hidden>Selecciona un servicio</option>
                     <option value="cumples">Celebración de cumpleaños</option>
                     <option value="aniversarios">Aniversarios</option>
@@ -85,15 +98,22 @@
                     <option value="cenas">Cena con amigos</option>
                 </select>
 
-                <label class="label" for="amountPeople">Número de personas</label>
-                <input type="number" class="mb-4 input--amountPeople form-inputToValidate" name="amountPeople" id="amountPeople" min="1" value="1">
+                <div class="mb-4">
+                    <label class="label" for="amountPeople">Número de personas</label>
+                    <input type="number" class="input--amountPeople form-inputToValidate" name="amountPeople" id="amountPeople" min="1" value="1">
+                    <span class="text-error text-error--amountPeople no-show">Cantidad de asistentes invalida ⚠. Por favor, ingrese un número válido mayor o igual a 1 persona.</span>
+                </div>
 
                 <label class="label" for="dateOfReserve" class="mt-4">Fecha y hora para tu reserva</label>
-                <input type="datetime-local" class="mb-4 input--dateOfReserve form-inputToValidate" name="dateOfReserve" id="dateOfReserve" min="2021-09-29T08:00" value="2021-09-28T08:00">
+                <input type="datetime-local" class="mb-4 input--dateOfReserve form-inputToValidate" name="dateOfReserve" id="dateOfReserve" min="2021-10-01T08:00" value="2021-10-01T08:00">
 
                 <textarea name="indications" class="my-5" id="indications" cols="30" rows="5" placeholder="Deja aquí tus indicaciones especiales." aria-label="Indicaciones especiales"></textarea>
 
                 <input id="submit" type="submit" value="Reservar" class="mb-4">
+
+                <div class="form-invalid--text no-show">
+                    <i class="fas fa-sad-cry"></i><p>Formulario invalido. Por favor, rellene los campos con información válida.</p>
+                </div>
             </form>
         </section>
 
