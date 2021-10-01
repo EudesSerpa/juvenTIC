@@ -1,0 +1,30 @@
+[
+	{
+		"precio": 25000,
+		"id": 1,
+		"title": "Carne",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1632686780/hors-doeuvre-2175326__480_cq1xtg.jpg"
+	},
+	{
+		"precio": 20000,
+		"id": 2,
+		"title": "Pescado",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1632686841/salmon-518032__340_nbjntu.jpg"
+	},
+	{
+		"precio": 17000,
+		"id": 3,
+		"title": "Hamburguesa",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1632686860/hamburger-1238246__340_j4cd0d.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 4,
+		"title": "Ensalada",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1632686860/hamburger-1238246__340_j4cd0d.jpg"
+	}
+]

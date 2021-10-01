@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../styles/styleM.css">
-    <title>Document</title>
+    <title>MENU</title>
 </head>
 <body>
     <header>
@@ -21,12 +21,37 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Servicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Constacto</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">contacts</a></li>
             </ul>
         </nav>
     </header>
 
+    <section>
+        <main>
+            <div class="container">
+                <h1>THE MENU  </h1>
+                <hr>
+                <div class="row" id="cards" style="justify-content: center;
+                align-items: center;"></div>
+                
+                <template id="template-card">
+                    <div class="card mx-2 my-2" style="width: 15rem; height: 19em; padding-top: 15px;">
+                        <img src="" class="card-img-top" alt="..." style="border-radius: 15px; width: 90%;">
+                        <div class="card-body">
+                        <h4 class="card-title" style="text-align: center;">Titulo</h4>
+                        <h5 class="card-text"  style="text-align: center;">precio</h5>
+                        <button class="btn btn-primary">Obtener articulo</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+      
+        </main>
+    </section>
+
+<!--
     <section>
         <h2>THE MENU</h2>
 
@@ -294,7 +319,7 @@
 
         </div>
 
-    </section>
+    </section> 
 
     <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" 
         class="modal fade" id="modalImage1">
@@ -307,7 +332,7 @@
                     <div  class="textModal" >
                         <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                         <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                        <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                        //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                     </div>
                 </div>
             </div>
@@ -326,7 +351,7 @@
                         <div  class="textModal" >
                             <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                             <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                            <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                            //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -346,7 +371,7 @@
                         <div  class="textModal" >
                             <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                             <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                            <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                            //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -366,7 +391,7 @@
                         <div  class="textModal" >
                             <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                             <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                            <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                            //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -386,7 +411,7 @@
                         <div  class="textModal" >
                             <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                             <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                            <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                            //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -406,32 +431,32 @@
                         <div  class="textModal" >
                             <h2 class="titulo" style="text-align: center;">Plato 1: $3200</h2>
                             <p class="textP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non, explicabo magni dolore ullam hic cum illum iste quae enim corrupti aut quod magnam velit, ad incidunt ea provident. Magnam.</p>
-                            <!--<a href="#" class="botonModal">¿Preguntas? Contactanos</a>-->
+                            //<a href="#" class="botonModal">¿Preguntas? Contactanos</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-        <div id="container">
-            <input type="checkbox" id="btn-mas">
-            <div class="redes">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <!--<a href="#" class="fa fa-pinterest"></a>-->
-            </div>
-            <div class="btn-mas">
-                <label for="btn-mas" class="fa fa-plus"></label>
-            </div>
-        </div>
     </section>
-
+-->
     
-
+    <div id="container">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="menu.pdf" class="fas fa-arrow-circle-down""></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         window.addEventListener("scroll", function(){
             const header = document.querySelector('header');
