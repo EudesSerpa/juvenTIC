@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesA/styleA.css">
+    <link rel="stylesheet" href="../styles/StyleCarrito.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -18,42 +18,23 @@
 
 </head>
 <body>
-    <!-- App -->
-    <!---------------------------Nav------------------------>
-    <!--------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand logo mx-5" href="#">sal&salsa</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div>
-            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="menu.html">EL MENÚ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SERVICIOS</a> 
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACTANOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="carrito.html">Carrito</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-      </div>
+  <header class="sticky">
+    <a href="#" class = "logo">sal&salsa</a>
+    <div class="toggle"></div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
     </nav>
-    <!---------------------------END OF Nav------------------------>
-    <!------------------------------------------------------------->
+  </header>
 
-    <main>
+    <section>
+      <h2 class="titulo">Lista de Compras</h2>
       <div class="container">
         
        <table class="table">
@@ -103,35 +84,104 @@
     </template>
     </div>
 
-    </main>
-    <footer>
-      <div class="container">
-        <div class="cole">
-          <div class="my-4">
-            <img src="https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1631726989/logo_2x_t0bph6.png" width="220px" height="200px" alt="">
-          </div>
-          
-          <div class="miniNav my-4">
-            <ul>
-              <a href="#" class="">MAPA DEL SITIO</a>
-              <a href="#" class="">CONTACTANOS</a>
-              <a href="#" class="">RESERVAS</a>
-            </ul>
-            <p>Restaurante Sal y Salsa Ltda.<br>
-              Calle 19No.7-30. Bogotá <br>
-              reservas@salysalsa.com <br>
-              31232525321
-            </p>
-            <p>&copy Copyright 2020.</p>
+    <div class="bottonComprar">
+      <a href="" class="chat-button">Comprar</a>
+    </div>
+
+    </section>
+
+    <!--Button Sticky-->
+
+    <!--Ventana modal-->
+    <div class="containerModal">
+      <form class="form modal modal-close">
+        <p class="close">X</p>
+        <div class="form_container">
+          <h2 class="form_titulo">Contactame</h2>
+          <input type="text" class="form_input" placeholder="Nombre">
+          <input type="email" class="form_input" placeholder="Correo">
+          <textarea class="form_input form_input--message" placeholder="Mensaje"></textarea>
+
+          <div class="enviar">
+            <input type="submit" value="Confirmar" class="form_cta" id="vaciarC"> 
           </div>
         </div>
-        
+      </form>
+    </div>
+
+    <footer class="footer-section">
+      <div class="container-xxl wrapper">
+        <a href="./index.html" class="footer-section--logo">
+          <img src="https://i.postimg.cc/5y3c0dMJ/logo-2x.png" alt="Restaurant logo">
+        </a>
+        <div class="footer-credentials">
+          <div class="footer-credentials--nav">
+            <ul>
+              <li><a href="#">MapSite</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Reservations</a></li>
+            </ul>
+          </div>
+          <div class="footer-credentials--data">
+            <ul>
+              <li>Restaurant Sal y Salsa Ltda.</li>
+              <li>Calle 33 No. 5 - 15, JuvenTIC</li>
+              <li>reserveTIC@juventic.com</li>
+              <li>333 333 3333</li>
+            </ul>
+            <p class="copyright">juvenTIC © Copyright 2021.</p>
+          </div>
+        </div>
+        <a href="#" class="footer-section--map">
+          <img src="https://i.postimg.cc/BZ1VhPkM/map.jpg" alt="Direction on Google Maps">
+        </a>
       </div>
-      
     </footer>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <script src="./app-2.js"></script>
+    <script src="../src/js/app-2.js"></script>
+    <script>
+      
+      let cerrar = document.querySelectorAll(".close")[0];
+      let abrir = document.querySelectorAll(".chat-button")[0];
+      let modal = document.querySelectorAll(".modal")[0];
+      let modalC = document.querySelectorAll(".containerModal")[0];
+
+
+      abrir.addEventListener("click", function(e){
+          e.preventDefault();
+          modalC.style.opacity = "1";
+          modalC.style.visibility = "visible";
+          modal.classList.toggle("modal-close");
+      })
+
+      cerrar.addEventListener("click", function(e){
+          modal.classList.toggle("modal-close");
+          setTimeout(function(){
+              modalC.style.opacity = "0";
+              modalC.style.visibility = "hidden";
+          }, 600)
+      })
+
+      window.addEventListener("click", function(e){
+          if(e.target == modalC){
+              modal.classList.toggle("modal-close");
+              setTimeout(function(){
+                  modalC.style.opacity = "0";
+                  modalC.style.visibility = "hidden";
+              }, 800)
+          }
+      })
+
+      const navigation = document.querySelector('nav');
+
+      document.querySelector('.toggle').onclick = function(){
+          this.classList.toggle('active');
+          navigation.classList.toggle('active');
+      }
+      
+    </script>
 </body>
 </html>

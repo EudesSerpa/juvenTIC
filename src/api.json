@@ -26,5 +26,48 @@
 		"title": "Ensalada",
 		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
 		"thumbnailUrl": "https://res.cloudinary.com/universidad-de-cartagena/image/upload/v1632686860/hamburger-1238246__340_j4cd0d.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 5,
+		"title": "Sushi",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/1X96n6m4/p2.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 6,
+		"title": "Chicharon",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/BnyxYXgw/p3.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 7,
+		"title": "Plato 7",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/mk89QDkj/p5.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 8,
+		"title": "Arroz mixto",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/pdFKgRcV/p6.jpg"
+	},
+	{
+		"precio": 10000,
+		"id": 9,
+		"title": "chuzos",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/J0P3kdVH/foto1-2x.png"
+	}
+	,
+	{
+		"precio": 10000,
+		"id": 10,
+		"title": "Camarones",
+		"descrip": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+		"thumbnailUrl": "https://i.postimg.cc/VLmH03Mv/menu5-2x.png"
 	}
 ]
