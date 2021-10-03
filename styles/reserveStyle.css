@@ -190,7 +190,7 @@ a { text-decoration: none; }
 
 .form-invalid--text {
     padding: 5px;
-    margin-top: 40px;
+    margin: 30px auto 0;
     color: var(--white);
     background-color: var(--orange-dark);
     border-radius: 3px;
@@ -200,6 +200,7 @@ a { text-decoration: none; }
 .form-invalid--text p {
     max-width: 90%;
     margin: auto;
+    font-size: 1.5rem;
 }
 
 

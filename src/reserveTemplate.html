@@ -59,7 +59,7 @@
 
             <!-- Formulario de reserva -->
             <!-- action="https://formspree.io/f/xpzknqzj" method="POST" -->
-            <form id="form" class="main--form mt-lg-5">
+            <form id="form" action="https://formspree.io/f/xpzknqzj" method="POST" class="main--form mt-lg-5">
                 <div class="mb-4 ">
                     <div id="container--input-name" class="container-input">
                         <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
@@ -117,7 +117,23 @@
             </form>
         </section>
 
-        <div id="containerModal"></div>
+        <!-- <div id="containerModal"></div> -->
+        <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="modal-containerLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="modal-containerLabel">Reservación</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- información del modal -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Ok!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -172,7 +188,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <script src="../assets/validations.js"></script>
-    <!-- <script src="../assets/reserves.js"></script> -->
+    <!-- <script src="../assets/validations.js"></script> -->
+    <script type="module" src="../assets/reserves.js"></script>
 </body>
 </html>
