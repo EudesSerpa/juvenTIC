@@ -30,6 +30,7 @@
                 <div id="dataNavbarCollapsed" class="collapse navbar-collapse justify-content-end">
                     <div class="nav-main--links navbar-nav">
                         <a href="#" class="nav-link px-3 text-white">Menu</a>
+                        <a href="#" class="nav-link px-3 text-white">Services</a>
                         <a href="#" class="nav-link px-3 text-white">Map Site</a>
                         <a href="#" class="nav-link px-3 text-white">Contact</a>
                         <a href="#" class="nav-link px-3 text-white">About</a>
@@ -47,6 +48,7 @@
 
     <main>
         <section class="reservations-section container-xxl wrapper d-lg-flex">
+            <!-- Detalles de la pagina -->
             <div class="container--details me-lg-5">
                 <h1 class="reservations-section--title">Reservaciones</h1>
                 <article class="reservations-section--description">
@@ -58,8 +60,7 @@
             </div>
 
             <!-- Formulario de reserva -->
-            <!-- action="https://formspree.io/f/xpzknqzj" method="POST" -->
-            <form id="form" action="https://formspree.io/f/xpzknqzj" method="POST" class="main--form mt-lg-5">
+            <form id="form" action="https://formspree.io/f/xknkevwl" method="POST" class="main--form mt-lg-5">
                 <div class="mb-4 ">
                     <div id="container--input-name" class="container-input">
                         <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
@@ -67,10 +68,6 @@
                     </div>
                     <span class="text-error text-error--name no-show">Nombre invalido ⚠. Por favor, ingrese nombre y apellido.</span>
                 </div>
-                <!-- <div id="container--input-name" class="container-input mb-4">
-                    <input type="text" id="name" name="name" class="input--name form-inputToValidate" required>
-                    <label class="label" for="name"><span>Nombre</span></label>
-                </div> -->
 
                 <div class="mb-4">
                     <div class="container-input">
@@ -118,7 +115,7 @@
         </section>
 
         <!-- <div id="containerModal"></div> -->
-        <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="modal-containerLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-container" tabindex="-1" aria-labelledby="modal-containerLabel" aria-describedby="Informacion sobre el envio de la reservacion" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
