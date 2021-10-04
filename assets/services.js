@@ -6,7 +6,7 @@ function showCards() {
         const cardPosition = card.getBoundingClientRect().top;
 
         //Altura de la ventana
-        const viewportHeight = window.innerHeight / 2;
+        const viewportHeight = window.innerHeight / 1.5;
 
         if(cardPosition < viewportHeight){
             card.style.opacity = 1;
