@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    --white: #fff;
+    --orange: #f73600;
+    --orange-dark: #cc2b2b;
+    --vinotinto: #310101;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--white);
+}
+
+.wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a { text-decoration: none; }
+
+
+/* --- Header --- */
+/* Navbar Section */
+.nav-main > .wrapper {
+    padding: 0;
+}
+
+.nav-main--links a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+}
+
+.nav-main--form input {
+    min-width: 190px;
+    font-size: 1.4rem;
+}
+
+.nav-main--form button {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--orange);
+}
+.nav-main--form button:hover {
+    background-color: var(--orange-dark);
+}
+
+
+/* --- Main --- */
+/* Reservations Section */
+.reservations-section {
+    min-height: 80vh;
+    width: 100%;
+}
+    /* Details */
+.container--details {
+    flex: 1;
+    max-width: 750px;
+}
+
+.reservations-section--title {
+    margin: 40px auto;
+    color: var(--vinotinto);
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+.reservations-section--description {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+}
+
+    /* Form */
+.main--form {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    color: var(--white);
+    background-color: var(--vinotinto);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main--form label {
+    font-size: 1.5rem;
+}
+
+.main--form input,
+.main--form select,
+.main--form textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    color: var(--white);
+    font-size: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main--form input:focus,
+.main--form select:focus,
+.main--form textarea:focus {
+    border-bottom-color: var(--white);
+}
+
+.main--form input[type="datetime-local"]:focus,
+.main--form select:focus {
+    background-color: var(--orange-dark);
+}
+
+.main--form select option {
+    background-color: var(--vinotinto);
+}
+
+.main--form textarea {
+    min-height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.main--form input[type="submit"] {
+    width: initial;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    outline: none;
+    transition: all 0.3s linear 0.1s;
+}
+.main--form input[type="submit"]:hover {
+    font-weight: bold;
+    color: var(--vinotinto);
+    background-color: var(--white);
+}
+
+    /* estilos para las validaciones */
+.container-input input + .label.valid span {
+    color: #00C853;
+}
+.container-input input + .label.valid::after {
+    border-bottom: 3px solid #00C853;
+}
+.container-input input + .label.invalid span {
+    color: var(--orange-dark);
+}
+.container-input input + .label.invalid::after {
+    border-bottom: 3px solid var(--orange-dark);
+}
+
+
+.text-error.show,
+.form-invalid--text.show {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.text-error.no-show,
+.form-invalid--text.no-show {
+    display: none;
+}
+
+.text-error, .form-invalid--text {
+    color: var(--orange-dark);
+}
+
+.form-invalid--text {
+    padding: 5px;
+    margin: 30px auto 0;
+    color: var(--white);
+    background-color: var(--orange-dark);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form-invalid--text p {
+    max-width: 90%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+
+    /* Efecto Label Floating (Inputs: text - email - tel)*/
+.container-input {
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.container-input label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-input label::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--white);
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.container-input label span {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.container-input input:focus + label,
+.container-input input:valid + label {
+    pointer-events: none;
+}
+.container-input input:focus + label span,
+.container-input input:valid + label span {
+    transform: translateY(-140%);
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.container-input input:focus + label::after,
+.container-input input:valid + label::after {
+    transform:translateX(0%);
+}
+
+
+    /* Modal */
+.modal-dialog {
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: .8rem 1.5rem;
+}
+
+.modal-header {
+    font-size: 1.8rem;
+}
+.modal-body p:last-of-type {
+    font-size: 1.4rem;
+}
+.modal-footer button{
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: var(--orange);
+    letter-spacing: 0.02em;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.modal-footer button:hover {
+    color: var(--white);
+    background-color: var(--orange-dark);
+}
+
+/* --- Footer --- */
+.footer-section {
+    background-color: var(--vinotinto);
+    color: var(--white);
+}
+
+.footer-section .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section--logo,
+.footer-section--map {
+    display: none;
+    max-width: 180px;
+}
+
+.footer-credentials {
+    width: 100%;
+    max-width: 700px;
+}
+
+.footer-credentials--nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-credentials--nav a {
+    padding-bottom: 5px;
+    color: var(--white);
+}
+.footer-credentials--nav a:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+.footer-credentials--data {
+    font-size: 1.4rem;
+}
+.footer-credentials--data .copyright {
+    margin-bottom: 0;
+}
+
+
+
+/* --- Floating --- */
+/* Float Button: Social Media */
+#btn-mas{
+    display: none;
+}
+
+#container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: var(--orange-dark);
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color: var(--orange-dark);
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: var(--orange);
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+
+
+
+
+/* --- Media Queries --- */
+@media (min-width: 410px) {
+    /* Footer Section */
+    .footer-section--logo {
+        display: block;
+        width: 50%;
+        margin-right: 3%;
+    }
+}
+
+@media (min-width: 700px) {
+    /* Footer Section */
+    .footer-section--logo,
+    .footer-section--map {
+        width: 100%;
+    }
+    .footer-section--map {
+        display: block;
+        margin-left: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 80%;
+    }
+}
