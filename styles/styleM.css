@@ -230,11 +230,20 @@ section .container{
 
 .botonM {
     border-radius: 300px;
-    border: 1px solid;
-    background: currentColor;
-    text-align: center;
-    width: 50px;
+    border: 2px solid blue;
+    color: #008CBA;
+    width: 100px;
     height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+  
+.botonM:hover {
+    width: 90px;
+    background-color: #008CBA;
+    color: white;
 }
 
 .contImgP{
@@ -316,7 +325,15 @@ section .container{
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
+    width: 60px;
+    margin-right: 5px;
+    transition-duration: 0.4s;
+}
+
+.addCarrito:hover{
     width: 50px;
+    background-color: #008CBA;
+    color: white;
 }
 
 /* Generals Styles */
