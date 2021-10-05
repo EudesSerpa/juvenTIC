@@ -19,7 +19,7 @@ cards.addEventListener('click', (e)=>{
 
 const fetchApi = async ()=>{
 	try{
-		const res = await fetch('api.json');
+		const res = await fetch('https://my-json-server.typicode.com/JohanDavidPortocarrero/filejson/productos');
 		const data = await res.json();
 		pintarCard(data)
 	}catch(error){
