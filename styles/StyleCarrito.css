@@ -242,7 +242,7 @@ section{
 
 .form_cta{
     font-family: inherit;
-    background-color: #889FE0;
+    background-color: #589FE0;
     color: #fff;
     border: none;
     font-size: 1rem;
@@ -258,7 +258,7 @@ section{
 .text-error.show,
 .form-invalid--text.show {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .text-error.no-show,
