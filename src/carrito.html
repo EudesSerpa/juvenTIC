@@ -155,12 +155,21 @@
 
     <script src="../src/js/app-2.js"></script>
     <script>
+
+      let cerrarForm = document.getElementById('vaciarC');
+
+      cerrarForm.addEventListener("click", function(e){
+        modal.classList.toggle("modal-close");
+          setTimeout(function(){
+              modalC.style.opacity = "0";
+              modalC.style.visibility = "hidden";
+          }, 600)
+      })
       
       let cerrar = document.querySelectorAll(".close")[0];
       let abrir = document.querySelectorAll(".chat-button")[0];
       let modal = document.querySelectorAll(".modal")[0];
       let modalC = document.querySelectorAll(".containerModal")[0];
-
 
       abrir.addEventListener("click", function(e){
           e.preventDefault();
