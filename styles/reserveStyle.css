@@ -259,7 +259,7 @@ a { text-decoration: none; }
 
     /* Modal */
 .modal-dialog {
-    max-width: 90%;
+    max-width: 700px;
     margin: 1rem auto;
 }
 
