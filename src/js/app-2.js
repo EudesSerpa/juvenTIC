@@ -90,3 +90,101 @@ const btnAccion = (e)=>{
 
 	e.stopPropagation()
 }
+
+
+// Validacion de campos del form
+const form = document.getElementById('form');
+const textFormInvalid = document.querySelector('.form-invalid--text');
+const inputs = document.querySelectorAll('.form_input');
+
+
+async function handleSubmit(event) {
+    event.preventDefault();
+
+    const validations = Object.values(fieldsToValidate);
+
+    if(validations.every(validation => validation)) {
+        //Enviar
+        const formData = new FormData(this);
+
+        try {
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                },
+            });
+
+            if(response.ok) {
+                this.reset();
+				console.log('Form enviado');
+				alert('Form enviado');
+            }else {
+				console.log('No se pudo enviar el form');
+				alert('No se pudo enviar el form');
+            }
+        } catch (error) {
+            console.log('Error: No se pudo enviar el form', error.message);
+            alert('Error: No se pudo enviar el form');
+        }
+
+    }else {
+        //No enviar
+        textFormInvalid.classList.remove('no-show');
+        textFormInvalid.classList.add('show');
+
+        setTimeout(() => {
+            textFormInvalid.classList.remove('show');
+            textFormInvalid.classList.add('no-show');
+        }, 4000);
+    }
+}
+
+
+function handleInput(e) {
+	let data = e.target.value.trim();
+
+	switch (e.target.name) {
+		case 'name':
+			validateInput(regex.regexName, data.toLowerCase(), 'name');
+			break;
+		case 'email':
+			validateInput(regex.regexEmail, data, 'email');
+			break;
+	}
+}
+
+function validateInput(regExp, data, field) {
+	let textError = document.querySelector(`.text-error--${field}`);
+
+	if(regExp.test(data)) {
+		textError.classList.remove('show');
+        textError.classList.add('no-show');
+
+		fieldsToValidate[field] = true;
+	}else {
+		textError.classList.remove('no-show');
+        textError.classList.add('show');
+
+		fieldsToValidate[field] = false;
+	}
+}
+
+
+form.addEventListener('submit', handleSubmit);
+
+inputs.forEach(input => {
+	input.addEventListener('blur', handleInput);
+});
+
+
+const fieldsToValidate = {
+	'name': false,
+	'email': false,
+};
+
+const regex = {
+    regexName: /^([a-z]+)\s[a-z]+(\s[a-z]+|\s[a-z]+\s[a-z]+|\s[a-z]+\s[a-z]+\s[a-z]+)?$/,
+    regexEmail: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+};

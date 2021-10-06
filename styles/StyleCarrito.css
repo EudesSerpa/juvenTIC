@@ -253,6 +253,40 @@ section{
     width: 50%;
 }
 
+
+/* Validations */
+.text-error.show,
+.form-invalid--text.show {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.text-error.no-show,
+.form-invalid--text.no-show {
+    display: none;
+}
+
+.text-error, .form-invalid--text {
+    color: var(--orange-dark);
+}
+
+.form-invalid--text {
+    padding: 5px;
+    margin: 30px auto 0;
+    color: var(--white);
+    background-color: var(--orange-dark);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form-invalid--text p {
+    max-width: 90%;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+
 .logo{
     font-size: 1.8rem;
     margin-right: 25px;

@@ -94,17 +94,27 @@
 
     <!--Ventana modal-->
     <div class="containerModal">
-      <form class="form modal modal-close">
+      <form id="form" class="form modal modal-close" action="https://formspree.io/f/xknkevwl"
+  method="POST">
         <p class="close">X</p>
         <div class="form_container">
           <h2 class="form_titulo">Finalizar Compra</h2>
-          <input type="text" class="form_input" placeholder="Nombre">
-          <input type="email" class="form_input" placeholder="Correo">
-          <textarea class="form_input form_input--message" placeholder="Mensaje (opcional)"></textarea>
+          <div class="w-100 mb-3">
+            <input type="text" name="name" class="form_input w-100" placeholder="Nombre">
+            <span class="text-error text-error--name no-show">Nombre invalido. Por favor, ingrese un nombre valido.</span>
+          </div>
+          <div class="w-100 mb-3">
+            <input type="email" name="email" class="form_input w-100" placeholder="Correo">
+            <span class="text-error text-error--email no-show">Email invalido. Por favor, ingrese un email valido.</span>
+          </div>
+          <textarea class="form_input form_input--message" name="message" placeholder="Mensaje (opcional)"></textarea>
 
           <div class="enviar">
-            <input type="submit" value="Confirmar" class="form_cta" id="vaciarC"> 
+            <input type="submit" value="Confirmar" class="form_cta" id="vaciarC">
           </div>
+        </div>
+        <div class="form-invalid--text no-show mt-4">
+          <i class="fas fa-sad-cry"></i><p>Formulario invalido. Por favor, rellene los campos con información válida.</p>
         </div>
       </form>
     </div>
