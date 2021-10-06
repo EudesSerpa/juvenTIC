@@ -53,19 +53,9 @@ a { text-decoration: none; }
 }
 
 .nav-main--form input {
-    min-width: 180px;
+    min-width: 170px;
     font-size: 1.4rem;
 }
-
-.nav-main--form button {
-    border: none;
-    border-radius: 8px;
-    background-color: var(--orange);
-}
-.nav-main--form button:hover {
-    background-color: var(--orange-dark);
-}
-
 
 /* --- Main --- */
 /* Services Section */
@@ -237,10 +227,20 @@ a { text-decoration: none; }
 /* --- Media Queries --- */
 @media (min-width: 410px) {
     /* Footer Section */
+    .footer-section .wrapper {
+        flex-direction: column;
+    }
     .footer-section--logo {
         display: block;
         width: 50%;
         margin-right: 3%;
+    }
+}
+
+@media (min-width: 510px) {
+    /* Footer Section */
+    .footer-section .wrapper {
+        flex-direction: row;
     }
 }
 
@@ -263,7 +263,7 @@ a { text-decoration: none; }
     /* Footer Section */
     .footer-section--logo,
     .footer-section--map {
-        width: 100%;
+        width: 50%;
     }
     .footer-section--map {
         display: block;
@@ -275,7 +275,14 @@ a { text-decoration: none; }
     .card {
         height: 100%;
     }
+
+    /* Footer Section */
+    .footer-section--logo,
+    .footer-section--map {
+        width: 100%;
+    }
 }
+
 @media (min-width: 1200px) {
     .wrapper {
         max-width: 80%;

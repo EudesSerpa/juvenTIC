@@ -20,7 +20,7 @@ items.addEventListener('click', (e)=>{
 })
 
 const pintarCarrito = ()=>{
-	console.log(carrito)
+	console.log('carrito', carrito)
 	items.innerHTML = ''
 	Object.values(carrito).forEach(producto=>{
 		templateCarrito.querySelector('th').textContent = producto.id
@@ -39,6 +39,11 @@ const pintarCarrito = ()=>{
 	localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
+function cleanCarrito() {
+	carrito = {}
+	pintarCarrito()
+}
+
 const pintarFooter = ()=>{
 	footer.innerHTML = ''
 	if(Object.keys(carrito).length === 0){
@@ -48,7 +53,7 @@ const pintarFooter = ()=>{
 
 	const nCantidad = Object.values(carrito).reduce((acun, {cantidad})=>acun + cantidad,0)
 	const nPrecio = Object.values(carrito).reduce((acun, {cantidad, precio})=>acun + cantidad * precio, 0)
-	
+
 	templateFooter.querySelectorAll('td')[0].textContent = nCantidad
 	templateFooter.querySelector('span').textContent = nPrecio
 
@@ -57,17 +62,7 @@ const pintarFooter = ()=>{
 	footer.appendChild(fragment)
 
 	const botonVaciar = document.getElementById('vaciar-carrito')
-	botonVaciar.addEventListener('click', ()=>{
-		carrito = {}
-		pintarCarrito()
-	})
-
-	const botonVaciar2 = document.getElementById('vaciarC')
-	botonVaciar2.addEventListener('click', ()=>{
-		carrito = {}
-		pintarCarrito()
-	})
-
+	botonVaciar.addEventListener('click', cleanCarrito);
 }
 
 const btnAccion = (e)=>{
@@ -106,6 +101,12 @@ async function handleSubmit(event) {
     if(validations.every(validation => validation)) {
         //Enviar
         const formData = new FormData(this);
+		formData.set('Informacion', 'Productos comprados');
+
+		const cart = Object.values(carrito);
+		cart.forEach(product => {
+			formData.append('Productos', `Producto: ${product.title} - Precio: ${product.precio} - Cantidad: ${product.cantidad}`);
+		});
 
         try {
             const response = await fetch(this.action, {
@@ -118,16 +119,43 @@ async function handleSubmit(event) {
 
             if(response.ok) {
                 this.reset();
-				console.log('Form enviado');
-				alert('Form enviado');
+				Swal.fire({
+					icon: 'success',
+					title: 'Compra realizada con éxito',
+					showConfirmButton: false,
+					timer: 1800
+				});
+
+				cleanCarrito();
             }else {
-				console.log('No se pudo enviar el form');
-				alert('No se pudo enviar el form');
+				Swal.fire({
+					icon: 'error',
+					title: 'Error al realizar la compra',
+					text: `
+					No se pudo realizar la confirmacion de compras. Por favor, intente nuevamente en unos minutos o comuniquese con nosotros por otro medio.
+
+					Estamos trabajando en solucionar el problema.
+					`,
+					showConfirmButton: false,
+					timer: 3000
+				})
             }
         } catch (error) {
-            console.log('Error: No se pudo enviar el form', error.message);
-            alert('Error: No se pudo enviar el form');
+			console.log('Error: No se pudo enviar el form', error.message);
+			Swal.fire({
+				icon: 'error',
+				title: 'Error al realizar compra',
+				text: `
+				No se pudo realizar la confirmacion de compras. Por favor, intente nuevamente en unos minutos o comuniquese con nosotros por otro medio.
+
+				Estamos trabajando en solucionar el problema.
+				`,
+				showConfirmButton: false,
+				timer: 3000
+			})
         }
+
+		//Cerrar modal del formulario.
 
     }else {
         //No enviar

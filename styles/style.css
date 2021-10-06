@@ -54,10 +54,11 @@ a { text-decoration: none; }
 
 .nav-main--form input {
     min-width: 180px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .nav-main--form button {
+    font-size: 1.5rem;
     border: none;
     border-radius: 8px;
     background-color: var(--orange);
@@ -467,6 +468,9 @@ a { text-decoration: none; }
     }
 
     /* Footer Section */
+    .footer-section .wrapper {
+        flex-direction: column;
+    }
     .footer-section--logo {
         display: block;
         width: 50%;
@@ -497,6 +501,11 @@ a { text-decoration: none; }
     }
     .plate-description {
         font-size: 1.6rem;
+    }
+
+    /* Footer Section */
+    .footer-section .wrapper {
+        flex-direction: row;
     }
 }
 
@@ -545,7 +554,7 @@ a { text-decoration: none; }
     /* Footer Section */
     .footer-section--logo,
     .footer-section--map {
-        width: 100%;
+        width: 50%;
     }
     .footer-section--map {
         display: block;
@@ -593,7 +602,6 @@ a { text-decoration: none; }
         display: block;
         height: 420px;
     }
-
 }
 
 @media (min-width: 1200px) {
